@@ -1,0 +1,23 @@
+body{
+    background-color: gray;
+}
+#img_header{
+    width: 100px;
+}
+
+#title, .subtitle, .post_title{
+    color: rgb(37, 28, 163);
+}
+
+.post_title{
+    font-style: italic;
+}
+
+#img_codigos{
+    width: 500px;
+}
+
+.icones{
+    width: 50px;
+    border-radius: 4px;
+}

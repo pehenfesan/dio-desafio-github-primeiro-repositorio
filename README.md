@@ -31,8 +31,8 @@ A princípio somente o autor principal Pedro Henrique Fernandes de Santana.
 
 ### Links úteis
 
-- [Guia markdown](https://www.markdownguide.org/basic-syntax/#code)
+[Guia markdown](https://www.markdownguide.org/basic-syntax/#code)
 
-- [Site da DIO](https://www.dio.me/)
+[Site da DIO](https://www.dio.me/)
 
-- [Meu LinkedIn](https://www.linkedin.com/in/pedro-henrique-fernandes-de-santana-34522b199/)
+[Meu LinkedIn](https://www.linkedin.com/in/pedro-henrique-fernandes-de-santana-34522b199/)

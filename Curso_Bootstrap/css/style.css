@@ -1,0 +1,32 @@
+body{
+    font: 20px 'Bebas Neue', cursive;
+}
+.navbar {
+    background-color: aqua;
+}
+
+.quem-somos{
+    background-color: rgb(110, 99, 211);
+    color: white;
+}
+
+.margin{
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+.produtos{
+    background-color: cadetblue;
+}
+
+.img-produtos, .logo{
+    border-radius: 7px;
+}
+
+.bg-footer{
+    background-color: rgba(71, 69, 69, 0.993);
+    color: aliceblue;
+}
+footer p a{
+    text-decoration: none;
+    color: aliceblue;
+}

@@ -1,4 +1,4 @@
-# Projeto_PPI2
+# Projeto Casa com Cheiro
 
 
 ## Sobre o autor
@@ -44,3 +44,9 @@ Essa tela mostra links dos contatos da empresa e o endereço do repositório ond
 ## Quem mantém e contribui com o projeto
 
 O projeto será mantido e terá a contribuição,a princípio, somente do autor principal, o estudante Pedro Henrique.
+
+## Contatos da empresa
+
+- [Email](mailto:casacomcheiro@gmail.com)
+- [Instagram](https:////www.instagram.com/casacomcheiro/)
+- [WhatsApp](http://api.whatsapp.com/send?text=Olá!%20Visitei%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20!&1=pt_BR&phone=5561992005914)

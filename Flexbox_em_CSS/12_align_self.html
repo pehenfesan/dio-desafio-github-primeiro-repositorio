@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align self </title>
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+            margin: 10px;
+        }
+
+        .container-align-items{
+            align-items: center;
+        }
+
+        .item{
+            background-color: blue;
+            color: aliceblue;
+            margin: 5px;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        .center{
+            align-self: center;
+        }
+
+        .flex-start{
+            align-self:flex-start;
+        }
+
+        .flex-end{
+            align-self: flex-end;
+        }
+
+        .stretch{
+            align-self: stretch;
+        }
+
+        .baseline{
+            align-self: baseline;
+        }
+
+        .auto{
+            align-self: auto;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>ROW</h1>
+    <section class="container container-align-items">
+        <div class="item auto">AAA</div>
+        <div class="item auto">BBBBBBB</div>
+        <div class="item auto">Lorem improta C Lorem improta C</div>
+        <div class="item auto">Item D</div>
+    </section>
+
+    <section class="container">
+        <div class="item flex-start">AAA</div>
+        <div class="item center">BBBBBBB</div>
+        <div class="item stretch">Lorem improta C blblblblblblbl</div>
+        <div class="item flex-end">Item D</div>
+    </section>
+
+    <section class="container">
+        <div class="item flex-start">AAA</div>
+        <div class="item center">BBBBBBB</div>
+        <div class="item stretch">Lorem improta C blblblblblblbl Lorem improta C</div>
+        <div class="item flex-end">Item D</div>
+    </section>
+
+    <h1>Column</h1>
+    <section class="container container-align-items column">
+        <div class="item auto">AAA</div>
+        <div class="item auto">BBBBBBB</div>
+        <div class="item auto">Lorem improta C </div>
+        <div class="item auto">Item D</div>
+    </section>
+
+    <section class="container column">
+        <div class="item flex-start">AAA</div>
+        <div class="item center">BBBBBBB</div>
+        <div class="item stretch">Lorem improta C blblblblblblbl</div>
+        <div class="item flex-end">Item D</div>
+    </section>
+
+    <section class="container column">
+        <div class="item flex-start">AAA</div>
+        <div class="item center">BBBBBBB</div>
+        <div class="item stretch">Lorem improta C blblblblblblbl Lorem improta C</div>
+        <div class="item flex-end">Item D</div>
+    </section>
+</body>
+</html>

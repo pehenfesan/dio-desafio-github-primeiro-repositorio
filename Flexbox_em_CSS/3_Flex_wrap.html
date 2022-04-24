@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Wrap</title>
+
+    <style>
+        .flex-container{
+            display: flex;
+            /*flex-direction: column;*/
+            height: 150px;
+            border: 2px solid black;
+            max-width: 310px;   
+        }
+
+        .flex-item{
+            font-size: 24px;
+            height: 50%;
+            text-align: center;
+            min-width: 100px;
+            line-height: 50px;
+        }
+        .nowrap{
+            flex-wrap: nowrap;
+        }
+
+        .wrap{
+            flex-wrap: wrap;
+        }
+
+        .wrap-reverse{
+            flex-wrap: wrap-reverse;
+        }
+
+        .yellow{
+            background-color: yellow;
+        }
+        .purple{
+            background-color: purple;
+        }
+        .blue{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>no wrap</h1>
+    <div class="flex-container nowrap">
+        <div class="flex-item blue">1</div>
+        <div class="flex-item purple">2</div>
+        <div class="flex-item yellow">3</div>
+        <div class="flex-item blue">4</div>
+    </div>
+
+    <h1>wrap</h1>
+    <div class="flex-container wrap">
+        <div class="flex-item yellow">1</div>
+        <div class="flex-item blue">2</div>
+        <div class="flex-item purple">3</div>
+        <div class="flex-item blue">4</div>
+    </div>
+
+    <h1>wrap reverse</h1>
+    <div class="flex-container wrap-reverse">
+        <div class="flex-item purple">1</div>
+        <div class="flex-item yellow">2</div>
+        <div class="flex-item blue">3</div>
+        <div class="flex-item yellow">4</div>
+    </div>
+</body>
+</html>

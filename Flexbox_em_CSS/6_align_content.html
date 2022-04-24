@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-Content</title>
+
+    <style>
+        .container{
+            height: 350px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+
+        .item{
+            background-color: brown;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .start{
+            align-content: flex-start;
+        }
+
+        .end{
+            align-content: flex-end;
+        }
+
+        .space-around{
+            align-content: space-around;
+        }
+
+        .space-between{
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <p>Stretch</p>
+    <div class="container stretch">
+        <div class="item">Lorem ipsum consectetur adipisicin</div>
+        <div class="item">Lorem consectetur adipisicing elit.</div>
+        <div class="item">Lorem consectetur adipisicing elit.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">t consectetur adipisicing elit.</div>
+        <div class="item">Lorem ipsum dolor sit .</div>
+        <div class="item">Lorem ipsum dolor</div>
+    </div>
+
+    <p>center</p>
+    <div class="container center">
+        <div class="item">Lorem ipsum consectetur adipisicin</div>
+        <div class="item">Lorem consectetur adipisicing elit.</div>
+        <div class="item">Lorem consectetur adipisicing elit.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">t consectetur adipisicing elit.</div>
+        <div class="item">Lorem ipsum dolor sit .</div>
+        <div class="item">Lorem ipsum dolor</div>
+    </div>
+
+    <p>flex-start</p>
+    <div class="container start">
+        <div class="item">Lorem ipsum consectetur adipisicin</div>
+        <div class="item">Lorem consectetur adipisicing elit.</div>
+        <div class="item">Lorem consectetur adipisicing elit.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">t consectetur adipisicing elit.</div>
+        <div class="item">Lorem ipsum dolor sit .</div>
+        <div class="item">Lorem ipsum dolor</div>
+    </div>
+
+    <p>flex-end</p>
+    <div class="container end">
+        <div class="item">Lorem ipsum consectetur adipisicin</div>
+        <div class="item">Lorem consectetur adipisicing elit.</div>
+        <div class="item">Lorem consectetur adipisicing elit.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">t consectetur adipisicing elit.</div>
+        <div class="item">Lorem ipsum dolor sit .</div>
+        <div class="item">Lorem ipsum dolor</div>
+    </div>
+
+    
+    <p>space-around</p>
+    <div class="container space-around">
+        <div class="item">Lorem ipsum consectetur adipisicin</div>
+        <div class="item">Lorem consectetur adipisicing elit.</div>
+        <div class="item">Lorem consectetur adipisicing elit.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">t consectetur adipisicing elit.</div>
+        <div class="item">Lorem ipsum dolor sit .</div>
+        <div class="item">Lorem ipsum dolor</div>
+    </div>
+
+    <p>space-between</p>
+    <div class="container space-between">
+        <div class="item">Lorem ipsum consectetur consectetur adipi</div>
+        <div class="item">Lorem consectetur adipi</div>
+        <div class="item">Lorem consectetur adipi consectetur adipi</div>
+        <div class="item">Lorem ipsum dolor sit a</div>
+        <div class="item">t consectetur adipisiciconsectetur adipi</div>
+        <div class="item">Lorem ipsum dolor sit consectetur adipi.</div>
+        <div class="item">Lorem ipsum dolor</div>
+    </div>
+</body>
+</html>

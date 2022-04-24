@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+
+    <style>
+        .container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 350px;
+            margin-bottom: 20px;
+        }
+
+        .item{
+            flex: 1;
+            background-color: blue;
+            color: aliceblue;
+            text-align: center;
+            font-size: 22px;
+            margin: 5px;
+        }
+
+        .o-1{
+            order: 1;
+        }
+
+        .o-2{
+            order: 2;
+        }
+
+        .o-3{
+            order: 3;
+        }
+
+        .o-4{
+            order: 4;
+        }
+        .column{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>Row</h1>
+    <p>Order: 0</p>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+
+    <p>Order: mix</p>
+    <div class="container">
+        <div class="item o-3">1</div>
+        <div class="item o-1">2</div>
+        <div class="item o-3">3</div>
+        <div class="item o-2">4</div>
+    </div>
+
+    <h1>Column</h1>
+    <p>Order: 0</p>
+    <div class="container column">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+
+    <p>Order: mix</p>
+    <div class="container column">
+        <div class="item o-3">1</div>
+        <div class="item o-1">2</div>
+        <div class="item o-3">3</div>
+        <div class="item o-2">4</div>
+    </div>
+</body>
+</html>

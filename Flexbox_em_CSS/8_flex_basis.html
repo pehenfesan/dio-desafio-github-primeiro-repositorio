@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-basis</title>
+    <style>
+        .flex-container{
+            max-width: 500px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .item{
+            background-color: rgb(66, 48, 2);
+            color: aliceblue;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .bauto{
+            flex-basis: auto;
+        }
+
+        .b-0{
+            flex-basis: 0;
+        }
+        .fg-1{
+            flex-grow: 1;
+        }
+
+        .fg-2{
+            flex-grow: 2;
+        }
+
+        .w-100{
+            flex-basis: 100px;
+        }
+    </style>
+</head>
+<body>
+    <p>basis auto e FG alternado</p>
+    <div class="flex-container">
+        <div class="item bauto fg-1">A</div>
+        <div class="item bauto fg-1">BBB</div>
+        <div class="item bauto fg-1">C</div>
+        <div class="item bauto fg-2">DEF</div>
+    </div>
+
+    <p>basis 0 e FG 1</p>
+    <div class="flex-container">
+        <div class="item b-0 fg-1">AAAAAAAA</div>
+        <div class="item b-0 fg-1">BBB</div>
+        <div class="item b-0 fg-1">C</div>
+        <div class="item b-0 fg-1">DEF</div>
+    </div>
+
+    <p>basis + width</p>
+    <div class="flex-container">
+        <div class="item w-100 fg-2">AA</div>
+        <div class="item w-100 fg-2">BBB</div>
+        <div class="item w-100 fg-2">C</div>
+        <div class="item w-100 fg-2">DEF</div>
+    </div>
+</body>
+</html>
